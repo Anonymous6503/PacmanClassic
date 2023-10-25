@@ -69,7 +69,7 @@ void APacmanPawn::OnOverlapBegin(AActor* PlayerActor, AActor* OtherActor)
 	}
 	else if (OtherActor->ActorHasTag("PowerUpFood"))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("PowerUpFood Eaten"))
+		Cast<AFood>(OtherActor)->Consume();
 	}
 }
 
