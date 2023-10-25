@@ -39,6 +39,6 @@ public:
 	void SetFrozen(bool value) { Frozen = value; }
 
 private:
-
+	UFUNCTION()
 	void OnOverlapBegin(AActor* PlayerActor, AActor* OtherActor);
 };
